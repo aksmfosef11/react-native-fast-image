@@ -102,6 +102,8 @@ class FastImageViewConverter {
                 onlyFromCache = true;
                 break;
             case IMMUTABLE:
+                diskCacheStrategy = DiskCacheStrategy.NONE;
+                skipMemoryCache = true;
                 // Use defaults.
                 break;
         }

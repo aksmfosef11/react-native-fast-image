@@ -168,6 +168,7 @@
                 options |= SDWebImageFromCacheOnly;
                 break;
             case FFFCacheControlImmutable:
+                 options |= SDWebImageRefreshCached;
                 break;
         }
         
