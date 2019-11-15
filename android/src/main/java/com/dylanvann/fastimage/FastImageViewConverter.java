@@ -94,9 +94,6 @@ class FastImageViewConverter {
         Boolean skipMemoryCache = false;
         switch (cacheControl) {
             case WEB:
-                // If using none then OkHttp integration should be used for caching.
-                diskCacheStrategy = DiskCacheStrategy.NONE;
-                skipMemoryCache = true;
                 break;
             case CACHE_ONLY:
                 onlyFromCache = true;

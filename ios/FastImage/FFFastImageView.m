@@ -162,7 +162,6 @@
         
         switch (_source.cacheControl) {
             case FFFCacheControlWeb:
-                options |= SDWebImageRefreshCached;
                 break;
             case FFFCacheControlCacheOnly:
                 options |= SDWebImageFromCacheOnly;
