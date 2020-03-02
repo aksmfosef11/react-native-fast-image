@@ -105,6 +105,10 @@ FastImage.preload = sources => {
     FastImageViewNativeModule.preload(sources)
 }
 
+FastImage.deleteImage = url => {
+    FastImageViewNativeModule.deleteImage(url)
+}
+
 FastImage.defaultProps = {
     resizeMode: FastImage.resizeMode.cover,
 }
